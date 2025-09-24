@@ -1,9 +1,9 @@
-list_main = [1, 4, 5, 7, 8, 3, 17, 22, 32,
+list= [1, 4, 5, 7, 8, 3, 17, 22, 32,
              "Ріко", "Жан", "Ніл", "Аарон", "Ендрю",
              "Ваймак", "Елісон", "Кевін", "Рене"]
 #розділяємо список на числа і слова
-list_int = [x for x in list_main if isinstance(x, int)]
-list_str = [x for x in list_main if isinstance(x, str)]
+list_int = [x for x in list if isinstance(x, int)]
+list_str = [x for x in list if isinstance(x, str)]
 
 #сортуємо числа по зростанню
 list_int.sort()
@@ -21,4 +21,5 @@ str_caps = [s.upper() for s in list_str]
 
 print("Основний відсортований список:", sorted_list)
 print("Числа кратні 2:", numbers_even)
+
 print("Слова прлпасані капсом:", str_caps)
